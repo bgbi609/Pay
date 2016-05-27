@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <mpos.core/mpos-extended.h>
 
 @interface ViewController : UIViewController
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C65678E1BB86FCA3873B145 /* libPods-Pay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A78699DCD5E492C5E256F9C4 /* libPods-Pay.a */; };
 		A8A077831CE9FB10008C09D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A077821CE9FB10008C09D6 /* main.m */; };
 		A8A077861CE9FB10008C09D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A077851CE9FB10008C09D6 /* AppDelegate.m */; };
 		A8A077891CE9FB10008C09D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A077881CE9FB10008C09D6 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		330F74D6E0637B9D5917DB7A /* Pods-Pay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pay/Pods-Pay.debug.xcconfig"; sourceTree = "<group>"; };
+		A78699DCD5E492C5E256F9C4 /* libPods-Pay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Pay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A0777E1CE9FB10008C09D6 /* Pay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A077821CE9FB10008C09D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8A077841CE9FB10008C09D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		A8A077A21CE9FB11008C09D6 /* PayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8A077A61CE9FB11008C09D6 /* PayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayUITests.m; sourceTree = "<group>"; };
 		A8A077A81CE9FB11008C09D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF79FA2CB7B952134FBE3BF3 /* Pods-Pay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pay.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pay/Pods-Pay.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C65678E1BB86FCA3873B145 /* libPods-Pay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		674465C45782C3A429A996CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A78699DCD5E492C5E256F9C4 /* libPods-Pay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D97318D1E31B9B8121DF1F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				330F74D6E0637B9D5917DB7A /* Pods-Pay.debug.xcconfig */,
+				BF79FA2CB7B952134FBE3BF3 /* Pods-Pay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A8A077751CE9FB10008C09D6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 				A8A0779A1CE9FB11008C09D6 /* PayTests */,
 				A8A077A51CE9FB11008C09D6 /* PayUITests */,
 				A8A0777F1CE9FB10008C09D6 /* Products */,
+				8D97318D1E31B9B8121DF1F5 /* Pods */,
+				674465C45782C3A429A996CE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8A077AB1CE9FB11008C09D6 /* Build configuration list for PBXNativeTarget "Pay" */;
 			buildPhases = (
+				9437AAA7B6067099D087B409 /* 📦 Check Pods Manifest.lock */,
 				A8A0777A1CE9FB10008C09D6 /* Sources */,
 				A8A0777B1CE9FB10008C09D6 /* Frameworks */,
 				A8A0777C1CE9FB10008C09D6 /* Resources */,
+				06C13A0EC4A21DA6EADB9A58 /* 📦 Embed Pods Frameworks */,
+				547D56E86ADDDA6C23E4DC88 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +291,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C13A0EC4A21DA6EADB9A58 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay/Pods-Pay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		547D56E86ADDDA6C23E4DC88 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pay/Pods-Pay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9437AAA7B6067099D087B409 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A8A0777A1CE9FB10008C09D6 /* Sources */ = {
@@ -413,6 +488,7 @@
 		};
 		A8A077AC1CE9FB11008C09D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 330F74D6E0637B9D5917DB7A /* Pods-Pay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pay/Info.plist;
@@ -424,6 +500,7 @@
 		};
 		A8A077AD1CE9FB11008C09D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF79FA2CB7B952134FBE3BF3 /* Pods-Pay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pay/Info.plist;
@@ -498,6 +575,7 @@
 				A8A077AD1CE9FB11008C09D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8A077AE1CE9FB11008C09D6 /* Build configuration list for PBXNativeTarget "PayTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +584,7 @@
 				A8A077B01CE9FB11008C09D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8A077B11CE9FB11008C09D6 /* Build configuration list for PBXNativeTarget "PayUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +593,7 @@
 				A8A077B31CE9FB11008C09D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
